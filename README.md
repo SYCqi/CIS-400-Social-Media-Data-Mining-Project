@@ -1,2 +1,3 @@
-# CIS-400-Social-Media-Data-Mining-Project
-Weather and Mood on Social Media Across U.S.
+# Weather and Mood on Social Media Across U.S.
+Objective: This project aims to find the correlation between weather conditions and the social media posts across the United States. To implement this, we selected three cities across three time zones: Syracuse (Eastern Time Zone), Chicago (Central Time Zone), and Los Angeles (Western Time Zone). By examining historical weather data at certain timestamps, we extract the data from twitter during these timestamps and use sentiment analysis to analyze the positivity of the content. Using an open-source weather API, we want to retrieve data on timestamps, coordinates (longitude, latitude), weather patterns (sunny, rainy, cloudy etc.). By doing this, this project plans to explore the relationship between weather conditions and sentiment expressed in social media posts.
+
