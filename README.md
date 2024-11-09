@@ -6,6 +6,8 @@ The study will focus on states representing diverse climates to capture a variet
 
 ![planting-climate-region1](https://github.com/user-attachments/assets/ee31aecc-1431-447b-b6f9-f0954524add9)
 
+The timestamp will be from 2023-Present.
+
 ## Guide to Setting Up Reddit API
 - First go to Reddit Developer Portal:
    https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2Fprefs%2Fapps
