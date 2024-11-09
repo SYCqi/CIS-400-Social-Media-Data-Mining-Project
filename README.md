@@ -1,14 +1,4 @@
-# Weather and Mood on Social Media Across U.S.
-Objective: This project aims to find the correlation between weather conditions and the social media posts across the United States. To implement this, we selected three cities across three time zones: Syracuse (Eastern Time Zone), Chicago (Central Time Zone), and Los Angeles (Western Time Zone). By examining historical weather data at certain timestamps, we extract the data from twitter during these timestamps and use sentiment analysis to analyze the positivity of the content. Using an open-source weather API, we want to retrieve data on timestamps, coordinates (longitude, latitude), weather patterns (sunny, rainy, cloudy etc.). By doing this, this project plans to explore the relationship between weather conditions and sentiment expressed in social media posts.
+# Regional Attitudes Toward Weather Conditions on Social Media Across the U.S.
+Objective: This project aims to analyze how people’s attitudes are affected by various weather conditions across different regions in the United States. By examining social media posts from specific states that represent different climate zones (hot, cold, temperate) we will explore how sentiments vary toward weather conditions (sunny, rainy, snowy,cloudy).
+The study will focus on states representing diverse climates to capture a variety of emotional responses—Hot regions: Florida, Hawaii; Cold regions: Alaska, North Dakota; Temperate regions: Kansas, Kentucky. By analyzing posts that mention weather-related keywords, we will use sentiment analysis to classify attitudes (positive, negative, or neutral) and determine whether certain weather conditions are associated with different emotional responses across these regions. This approach will help us understand regional attitudes toward weather conditions and uncover potential climate-based preferences in how people react to various weather experiences.
 
-Twitter X API Free Version:\n
-API Key and Secret: ****UYHCkq
-Bearer Token: AAAAAAAAAAAAAAAAAAAAAA96wwEAAAAA9ZW0GSoAZshTKi5D5fUqvtUYYrQ%3DdjT8I2WMp9xrjdDriju3iNPSdv5ywWfjyU3nanf9mbHHAbeOcc
-Access Token: 1855136050886086656-n15R1tDR2vU9LH24Kc9d6PbC5SXMyZ
-Access Token Secret: WnlzVuFjNvFR6YyF846u91OLTGzVJJ8WcXC5VsWbadepD
-
-Reddit API Free Version:
-Client ID (Secret): 2loVbNkK2wzUJpZcUjhc9S0Q8PlaVg
-Client Secret (personal use script): UsbLH6aUsdRajY8cU_Lsow
-Username: Unhappy_Series_9173
-userAgent: WeatherMoodAnalysis
