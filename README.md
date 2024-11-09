@@ -6,3 +6,9 @@ API Key and Secret: ****UYHCkq
 Bearer Token: AAAAAAAAAAAAAAAAAAAAAA96wwEAAAAA9ZW0GSoAZshTKi5D5fUqvtUYYrQ%3DdjT8I2WMp9xrjdDriju3iNPSdv5ywWfjyU3nanf9mbHHAbeOcc
 Access Token: 1855136050886086656-n15R1tDR2vU9LH24Kc9d6PbC5SXMyZ
 Access Token Secret: WnlzVuFjNvFR6YyF846u91OLTGzVJJ8WcXC5VsWbadepD
+
+Reddit API Free Version:
+Client ID (Secret): 2loVbNkK2wzUJpZcUjhc9S0Q8PlaVg
+Client Secret (personal use script): UsbLH6aUsdRajY8cU_Lsow
+Username: Unhappy_Series_9173
+userAgent: WeatherMoodAnalysis
