@@ -70,6 +70,6 @@ df = pd.DataFrame(data)                             # Initialize the data frame
 #
 # After the program runs successfully recommend you to open the csv file with excel or sheets to double check.
 #
-df.to_csv("reddit_data.csv", index=False)
+df.to_csv("cold_regions.csv", index=False)
 
-print("Successfully collected data from Reddit API and created the csv file! (^-^)")
+print("Successfully collected data from Reddit API and created new cold_regions.csv file")
