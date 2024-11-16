@@ -1,4 +1,4 @@
-#Sunny Weather for Hot Region
+# Sunny Weather for Hot Region
 > The keywords I used for the sunny weather are:
 
 > * identifier_keywords = ["weather", "temperature"]
@@ -7,7 +7,7 @@
 
 There are a total of **3294** data collected.
 
-#Rainy Weather for Hot Region
+# Rainy Weather for Hot Region
 > The keywords I used for the sunny weather are:
 
 > * identifier_keywords = ["weather", "temperature"]
