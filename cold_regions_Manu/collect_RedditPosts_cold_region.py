@@ -25,7 +25,8 @@ reddit = praw.Reddit(
 # Just note put in keywords that are most relevant to the weather can help filter the data more precisely.
 #
 weather_keywords = ["weather", "sunny", "rainy", "snowy", "cloudy", "hot", "cold", "freezing", "Climate change", "Storm", "Rainy day", "Sunny", "Snowstorm", "Blizzard", "Hurricane", "Tornado", "Windy", "Thunderstorm", "Lightning", "Freezing", "Heatwave", "Cold snap", "Flooding", "Drought", "Overcast", "Forecast", "Polar vortex", "Global warming"]
-attitude_keywords = ["love", "hate", "enjoy", "dislike", "like", "annoying", "annoyed", "worried", "relieved", "Thrilled", "scared", "excited", "Ruined"]
+
+attitude_keywords = ["love", "hate", "enjoy", "dislike", "annoying", "happy", "annoyed", "comfortable"
 
 # Defining Regional State Based On Climate Zones------------------------------------------------------------------------
 #
@@ -53,7 +54,8 @@ for state, subreddit_name in regional_states.items():
             posts = subreddit.search(search_query, limit=100)
             for submission in posts:
                 post_date = datetime.utcfromtimestamp(submission.created_utc)
-                if 2023 <= post_date.year:
+                # don't save posts under 20 characters to avoid useless comments
+                if 2023 <= post_date.year and if len(submission['text']) > 20 :
                     data.append({
                         "STATE": state,
                         "KEYWORD TYPE": "BOTH",
@@ -62,6 +64,25 @@ for state, subreddit_name in regional_states.items():
                         "TEXT": submission.selftext,
                         "UTC": post_date
                     })
+
+# Filter posts that do not have region keywords: North Dakota, ND, Alaska, AK, Fargo, Fairbanks, Denali, and similar terms
+def filter_by_region(data, locations):
+    return [entry for entry in data if any(
+        loc.lower() in (entry['title'].lower() + entry['text'].lower()) for loc in locations)]
+
+locations = ["North Dakota", "ND", "Alaska", "AK", "Fargo", "Fairbanks", "Denali", "Anchorage"]
+data = filter_by_region(data, locations)
+
+
+# Normalize text by converting all to lowercase, removing urls and other characters or stop words
+def normalize(data):
+    import re
+    data = data.lower()
+    data = re.sub(r"http\S+|www\S+|https\S+", '', data)  # Remove URLs
+    data = re.sub(r"[^a-zA-Z\s]", '', data)  # Remove special characters
+    return data
+
+data = normalize(data)
 
 # Storing Data Into a Data Frame----------------------------------------------------------------------------------------
 df = pd.DataFrame(data)                             # Initialize the data frame
