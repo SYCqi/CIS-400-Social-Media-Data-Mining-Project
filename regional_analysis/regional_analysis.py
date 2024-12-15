@@ -1,3 +1,16 @@
+# TEMPLATE FOR ANALYZING THE RESULT AFTER VADER SENTIMENT ANALYSIS----------------------------------------------------------------------------------
+# Version: 2
+# If you modified the code please change the file name into a relevant name
+#
+# After running the "Vader_sentiment_analysis.py" our 12 dataset was updated with 4 new columns ('positive', 'negative', 'neutral', 'compound'). 
+# Each Reddit posts from the 12 dataset has been analyzed to tell the attitude of the post toward the weather condition.
+#
+# In this python program all 12 dataset are analyzed together and make a overall analyzation of the final results to let us 
+# later develop vizualization graphs to visualize this projects final result of regional attitude toward the weather condition.
+#
+# https://ds3.ssrc.msstate.edu/2021/01/14/using-vadersentiment-to-intuitively-predict-the-sentiment-of-social-media-posts/
+#-----------------------------------------------------------------------------------------------------------------------
+
 import sqlite3
 import pandas as pd
 
