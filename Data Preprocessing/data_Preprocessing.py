@@ -23,9 +23,10 @@ import nltk
 nltk.download('all')
 
 # Importing CSV file----------------------------------------------------------------------------------------------------
-# Make sure to replace the 'read_csv' with the corresponding
+# Make sure to replace the 'read_csv' with the corresponding csv file name that you have previously collected from
+# "collect_RedditPosts.py".
 #
-csvData = pd.read_csv('hot_region_sunnyData.csv')
+csvData = pd.read_csv('hot_region_sunnyData.csv')    #replace with the dataset you have collected
 print(f"Total Data: {len(csvData)}")
 
 
@@ -127,4 +128,5 @@ csvData['TITLE'] = csvData['TITLE'].apply(NLTK_preprocess)
 csvData['TEXT'] = csvData['TEXT'].apply(NLTK_preprocess)
 
 # Save Changes to CSV & DB File-----------------------------------------------------------------------------------------
-csvData.to_csv('test.csv', index=False)
+# Remember to name the csv file with relavent format of clean_(region type)_region_(weather type)Data.csv
+csvData.to_csv('clean_hot_region_sunnyData.csv', index=False)
