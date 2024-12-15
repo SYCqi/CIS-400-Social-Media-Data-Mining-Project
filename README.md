@@ -55,3 +55,5 @@ You are all ready now go into the "Social Media Posts Data Retrieval" folder and
 - Then you can open up 'Final Analysis and Vizualization Graphs' folder and rin 'regional_analysis.py' where it will create a 'region_analysis.csv' that analyze the 12 vader dataset into one csv file for later used for creating vizualization graphs of our findings. For the vizualization graph for the final analysis run 'graphics_by_region.py'.
 
 - Lastly, you can open 'ML and roBERTa Sentiment Analysis' folder and run ml_analysis.py' and 'roBERTa_sentiment.iypnb' (in Google Colab) the preprocessed data from before is also saved in the 'preprocessedData' folder so just make sure you have that folder when you run the program.
+
+- Also, you can open the folder 'Word Cloud Vizualization" to run 'makeVisualization1.py' (for SabarChart.png) and 'makeVizualization2.py' (for word clouds png) just make sure to change the file path with the preprocessed dataset you wanted to create for.
