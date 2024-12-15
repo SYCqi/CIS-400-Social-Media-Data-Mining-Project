@@ -1,3 +1,5 @@
+# Creating a bar chart for the regional_analysis.csv that includes the final findings of the project
+#
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
