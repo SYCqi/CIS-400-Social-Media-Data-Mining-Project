@@ -41,6 +41,9 @@ You are all ready now go into the "Social Media Posts Data Retrieval" folder and
 
 
 ## Running the Code
+
+- Just download the whole zip folder for this project and run in the following sequence below:
+  
 - Open 'Social Media Posts Data Retrieval' folder and run the 'collect_RedditPosts.py' to collect the 12 dataset (total of 24 dataset, 12 as csv and 12 as db, but both data are the same just the file type is different) to start with. Remember to read the "Guide to Setting Up Reddit API" for it to work properly.
   
 - After having the 12 dataset open the 'Data Preprocessing' folder and run the 'data_preprocessing.py' to clean and organize the datasets. Remember to replace the csv file name of the dataset you are working on (becuase we seperate the data amoungst the four of us so we make the code to only read one csv file at a time). 
