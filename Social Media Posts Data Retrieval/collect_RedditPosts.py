@@ -1,5 +1,5 @@
- # TEMPLATE FOR REDDIT POSTS COLLECTING----------------------------------------------------------------------------------
-# Version: 1
+# TEMPLATE FOR REDDIT POSTS COLLECTING----------------------------------------------------------------------------------
+# Version: 2
 # If you modified the code please change the file name into a relevant name
 #
 # First please install all the required libraries that will be used for this program.
@@ -30,6 +30,7 @@ reddit = praw.Reddit(
 # Rainy: weather_keywords = ["rainy", "wet", "rain", "storm", "thunderstorm", "misty", "drizzle", "downpour"]
 # Cloudy: weather_keywords = ["cloudy", "overcast", "grey", "gray", "clouds", "dull", "gloomy", "hazy", "dark"]
 # Snowy: weather_keywords = ["snow", "snowy", "snowfall", "snowstorm", "blizzard", "flurries", "icy", "frosty"]
+#
 identifier_keywords = ["weather", "temperature"]
 weather_keywords = ["sunny", "hot", "summer", "heat", "sunlight", "clear sky", "warm", "sunshine"]
 attitude_keywords = ["love", "hate", "enjoy", "dislike", "annoying", "happy", "annoyed", "comfortable"]
@@ -38,8 +39,10 @@ attitude_keywords = ["love", "hate", "enjoy", "dislike", "annoying", "happy", "a
 #
 # Replace the state name with the state that you are working on in the dictionary, so it knows to look for
 # the specific location (state) that we wanted only.
-# "Kansas": "kansas","Kentucky": "kentucky"
-# 
+# Hot Region use these two states "Florida": "florida", "Hawaii": "hawaii"
+# Temperate Region use these two states "Kansas": "kansas","Kentucky": "kentucky"
+# Cold Region use these two states "Alaska": "alaska","North Dakota": "northdakota"
+#
 regional_states = {
     "Florida": "florida",
     "Hawaii": "hawaii"
