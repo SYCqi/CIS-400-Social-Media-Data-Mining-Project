@@ -38,7 +38,8 @@ attitude_keywords = ["love", "hate", "enjoy", "dislike", "annoying", "happy", "a
 #
 # Replace the state name with the state that you are working on in the dictionary, so it knows to look for
 # the specific location (state) that we wanted only.
-#
+# "Kansas": "kansas","Kentucky": "kentucky"
+# 
 regional_states = {
     "Florida": "florida",
     "Hawaii": "hawaii"
