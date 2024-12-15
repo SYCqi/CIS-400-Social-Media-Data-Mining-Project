@@ -50,7 +50,7 @@ You are all ready now go into the "Social Media Posts Data Retrieval" folder and
 
 - With the preprocessed dataset you can run the 'emotion_detection.py' first in the "Emotioin Detection" folder for 12 new dataset that include emotion and then run the 'emotion_detection_analysis.py' to analyze the emotion analysis of our dataset with graphs.
 
-- Next open up 'VADER Sentiment Analysis' to conduct the sentiment analysis for the 12 db dataset from the preprocessed data the one in the format of 'clean_(region)_region_(weather)Data.db' (we already have a copy of the preprocessed data in the "preprocessData" folder) and get the new 12 dataset with the sentiment info for them.
+- Next open up 'VADER Sentiment Analysis' to conduct the sentiment analysis for the 12 db dataset from the preprocessed data the one in the format of 'clean_(region)_region_(weather)Data.db' (we already have a copy of the preprocessed data in the "preprocessedData" folder) and get the new 12 dataset with the sentiment info for them.
 
 - Then you can open up 'Final Analysis and Vizualization Graphs' folder and rin 'regional_analysis.py' where it will create a 'region_analysis.csv' that analyze the 12 vader dataset into one csv file for later used for creating vizualization graphs of our findings. For the vizualization graph for the final analysis run 'graphics_by_region.py'.
 
