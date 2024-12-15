@@ -1,3 +1,5 @@
+# Running the VADER Senrtiment Analysis on the preprocessed data
+#
 # pip install vaderSentiment pandas
 # pip install vaderSentiment sqlite3 pandas
 
