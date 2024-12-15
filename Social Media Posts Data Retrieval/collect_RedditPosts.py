@@ -25,7 +25,11 @@ reddit = praw.Reddit(
 #
 # You can always add new list variables or keywords based on your filter needs.
 # Just note put in keywords that are most relevant to the weather can help filter the data more precisely.
-#
+# Below are the four set of weather keyword replace them with the weather you are filtering for.
+# Sunny: weather_keywords = ["sunny", "hot", "summer", "heat", "sunlight", "clear sky", "warm", "sunshine"]
+# Rainy: weather_keywords = ["rainy", "wet", "rain", "storm", "thunderstorm", "misty", "drizzle", "downpour"]
+# Cloudy: weather_keywords = ["cloudy", "overcast", "grey", "gray", "clouds", "dull", "gloomy", "hazy", "dark"]
+# Snowy: weather_keywords = ["snow", "snowy", "snowfall", "snowstorm", "blizzard", "flurries", "icy", "frosty"]
 identifier_keywords = ["weather", "temperature"]
 weather_keywords = ["sunny", "hot", "summer", "heat", "sunlight", "clear sky", "warm", "sunshine"]
 attitude_keywords = ["love", "hate", "enjoy", "dislike", "annoying", "happy", "annoyed", "comfortable"]
