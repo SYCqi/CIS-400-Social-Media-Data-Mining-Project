@@ -36,3 +36,17 @@ The timestamp will be from 2023-Present.
 
 
 You are all ready now go into the "Social Media Posts Data Retrieval" folder and download the "collect_RedditPosts.py" file.
+
+
+## Running the Code
+- Open 'Social Media Posts Data Retrieval' folder and run the 'collect_RedditPosts.py' to collect the 12 dataset (total of 24 dataset, 12 as csv and 12 as db, but both data are the same just the file type is different) to start with. Remember to read the "Guide to Setting Up Reddit API" for it to work properly.
+  
+- After having the 12 dataset open the 'Data Preprocessing' folder and run the 'data_preprocessing.py' to clean and organize the datasets. Remember to replace the csv file name of the dataset you are working on (becuase we seperate the data amoungst the four of us so we make the code to only read one csv file at a time). 
+
+- With the preprocessed dataset you can run the 'emotion_detection.py' first in the "Emotioin Detection" folder for 12 new dataset that include emotion and then run the 'emotion_detection_analysis.py' to analyze the emotion analysis of our dataset with graphs.
+
+- Next open up 'VADER Sentiment Analysis' to conduct the sentiment analysis for the 12 db dataset from the preprocessed data the one in the format of 'clean_(region)_region_(weather)Data.db' and get the new 12 dataset with the sentiment info for them.
+
+- Then you can open up 'Final Analysis and Vizualization Graphs' folder and rin 'regional_analysis.py' where it will create a 'region_analysis.csv' that analyze the 12 vader dataset into one csv file for later used for creating vizualization graphs of our findings. For the vizualization graph for the final analysis run 'graphics_by_region.py'.
+
+- Lastly, you can open 'ML and roBERTa Sentiment Analysis' folder and run ml_analysis.py' and 'roBERTa_sentiment.iypnb' (in Google Colab) the preprocessed data from before is also saved in the 'preprocessedData' folder so just make sure you have that folder when you run the program.
